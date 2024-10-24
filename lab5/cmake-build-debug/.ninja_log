@@ -1,0 +1,25 @@
+# ninja log v6
+3	143	1729799574783224080	CMakeFiles/lab5.dir/main.cpp.o.ddi	ed9d7bc12451f292
+143	148	1729799574926557411	CMakeFiles/lab5.dir/CXX.dd	27dac7de4cc5209
+143	148	1729799574926557411	/home/rabilint/CLionProjects/LNU-lection/lab5/cmake-build-debug/CMakeFiles/lab5.dir/CXXModules.json	27dac7de4cc5209
+143	148	1729799574926557411	CMakeFiles/lab5.dir/main.cpp.o.modmap	27dac7de4cc5209
+148	534	1729799574929890745	CMakeFiles/lab5.dir/main.cpp.o	de6c0f2b1f732390
+534	604	1729799575316557406	lab5	72169882ffc1996c
+7	66	1729799674796555926	CMakeFiles/lab5.dir/main.cpp.o.ddi	ed9d7bc12451f292
+66	71	1729799674856555925	CMakeFiles/lab5.dir/CXX.dd	27dac7de4cc5209
+66	71	1729799674856555925	/home/rabilint/CLionProjects/LNU-lection/lab5/cmake-build-debug/CMakeFiles/lab5.dir/CXXModules.json	27dac7de4cc5209
+66	71	1729799674856555925	CMakeFiles/lab5.dir/main.cpp.o.modmap	27dac7de4cc5209
+71	117	1729799674859889258	CMakeFiles/lab5.dir/main.cpp.o	de6c0f2b1f732390
+117	184	1729799674906555924	lab5	72169882ffc1996c
+9	167	1729803694013162503	CMakeFiles/lab5.dir/main.cpp.o.ddi	ed9d7bc12451f292
+167	172	1729803694173162502	CMakeFiles/lab5.dir/CXX.dd	27dac7de4cc5209
+167	172	1729803694173162502	/home/rabilint/CLionProjects/LNU-lection/lab5/cmake-build-debug/CMakeFiles/lab5.dir/CXXModules.json	27dac7de4cc5209
+167	172	1729803694173162502	CMakeFiles/lab5.dir/main.cpp.o.modmap	27dac7de4cc5209
+173	465	1729803694176495834	CMakeFiles/lab5.dir/main.cpp.o	de6c0f2b1f732390
+465	549	1729803694469829164	lab5	72169882ffc1996c
+5	210	1729803877616493107	CMakeFiles/lab5.dir/main.cpp.o.ddi	ed9d7bc12451f292
+210	230	1729803877823159771	CMakeFiles/lab5.dir/CXX.dd	27dac7de4cc5209
+210	230	1729803877823159771	/home/rabilint/CLionProjects/LNU-lection/lab5/cmake-build-debug/CMakeFiles/lab5.dir/CXXModules.json	27dac7de4cc5209
+210	230	1729803877823159771	CMakeFiles/lab5.dir/main.cpp.o.modmap	27dac7de4cc5209
+230	551	1729803877843159770	CMakeFiles/lab5.dir/main.cpp.o	de6c0f2b1f732390
+551	626	1729803878163159766	lab5	72169882ffc1996c
