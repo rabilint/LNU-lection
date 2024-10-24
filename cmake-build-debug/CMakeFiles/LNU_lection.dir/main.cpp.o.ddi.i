@@ -26420,11 +26420,12 @@ int main() {
 
 
 
+
     int x=1,y=1,z=1;
     printf("\n Enter 3 numbers: ");
     scanf("%d %d %d", &x,&y,&z);
     int D = pow(y,2) - 4*x*z;
-    printf("\n D = %d", D);
+
     int output = (-y + sqrt(D))/2*x;
 
 
