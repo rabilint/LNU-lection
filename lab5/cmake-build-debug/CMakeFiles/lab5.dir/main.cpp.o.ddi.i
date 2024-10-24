@@ -26385,35 +26385,41 @@ int main() {
     int userInputNum1, userInputNum2;
     printf("Please enter two numbers: ");
     scanf("%d %d", &userInputNum1, &userInputNum2);
-    userInputNum1>userInputNum2 ? printf("Перше число більше другого"): printf("Друге число більше першого");
+    userInputNum1 > userInputNum2 ? printf("Перше число більше другого") : (userInputNum1 < userInputNum2 ? printf("Друге число більше першого") : printf("Числа рівні"));
 
 
 
 
 
 
-    int hipotenuse,katet1,katet2;
-    printf("\nPlease enter lenght of hipotenuse: ");
-    scanf("%d", &hipotenuse);
-    printf("\nPlease enter lenght of katet1: ");
-    scanf("%d", &katet1);
-    printf("\nPlease enter lenght of katet2: ");
-    scanf("%d", &katet2);
-    if (katet1 = katet2 = hipotenuse) {
+
+    int c,a,b;
+    printf("\nPlease enter lenght of c: ");
+    scanf("%d", &c);
+    printf("\nPlease enter lenght of a: ");
+    scanf("%d", &a);
+    printf("\nPlease enter lenght of b: ");
+    scanf("%d", &b);
+    if (a == b && b == c) {
         printf("трикутник рівносторонній");
     }
-    else if (katet1 = katet2 != hipotenuse) {
+    else if (a == b || b == c || c == a) {
         printf("трикутник рівнобедрений");
     }
-    else if (katet1!= katet2 != hipotenuse) {
+    else if (a!= b != c) {
         printf("трикутник різносторонній");
     }
-    int cosA = -(std::pow(katet1, 2) - pow(katet2, 2) + pow(hipotenuse, 2) - 2 * katet2 * hipotenuse);
-    int cosB = -(std::pow(katet2, 2) - pow(katet1, 2) + pow(hipotenuse, 2) - 2 * katet1 * hipotenuse);
-    int cosC = -(std::pow(hipotenuse, 2) - pow(katet1, 2) + pow(katet2, 2) - 2 * katet1 * katet1);
-    printf("%d", cosA);
-    printf("\n%d", cosB);
-    printf("\n%d", cosC);
+
+
+    double a2 = a * a, b2 = b * b, c2 = c * c;
+
+    if (fabs(a2 + b2 - c2) < 1e-6 || fabs(a2 + c2 - b2) < 1e-6 || fabs(b2 + c2 - a2) < 1e-6) {
+        printf("\nТрикутник є прямокутним.\n");
+    } else if ((a2 + b2 > c2) && (a2 + c2 > b2) && (b2 + c2 > a2)) {
+        printf("\nТрикутник є гострокутним.\n");
+    } else {
+        printf("\nТрикутник є тупокутним.\n");
+    }
 
     return 0;
 }
