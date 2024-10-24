@@ -45,6 +45,7 @@ int main() {
     //вводяться з клавіатури
 
 
+
     int x=1,y=1,z=1;
     printf("\n Enter 3 numbers: ");
     scanf("%d %d %d", &x,&y,&z);
