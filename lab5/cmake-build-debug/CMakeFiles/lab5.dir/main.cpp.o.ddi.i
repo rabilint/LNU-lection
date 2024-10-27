@@ -26377,49 +26377,27 @@ namespace std
 
 # 6 "/home/rabilint/CLionProjects/LNU-lection/lab5/main.cpp"
 int main() {
+# 56 "/home/rabilint/CLionProjects/LNU-lection/lab5/main.cpp"
+    char *hundreds[] = {"", "Сто", "Двісті", "Триста", "Чотириста", "П'ятсот", "Шістсот", "Сімсот", "Вісімсот", "Дев'ятсот"};
+    char *tens[] = {"", "", "Двадцять", "Тридцять", "Сорок", "П'ятдесят", "Шістдесят", "Сімдесят", "Вісімдесят", "Дев'яносто"};
+    char *teens[] = {"Десять", "Одинадцять", "Дванадцять", "Тринадцять", "Чотирнадцять", "П'ятнадцять", "Шістнадцять", "Сімнадцять", "Вісімнадцять", "Дев'ятнадцять"};
+    char *units[] = {"", "Один", "Два", "Три", "Чотири", "П'ять", "Шість", "Сім", "Вісім", "Дев'ять"};
 
-
-
-
-
-    int userInputNum1, userInputNum2;
-    printf("Please enter two numbers: ");
-    scanf("%d %d", &userInputNum1, &userInputNum2);
-    userInputNum1 > userInputNum2 ? printf("Перше число більше другого") : (userInputNum1 < userInputNum2 ? printf("Друге число більше першого") : printf("Числа рівні"));
-
-
-
-
-
-
-
-    int c,a,b;
-    printf("\nPlease enter lenght of c: ");
-    scanf("%d", &c);
-    printf("\nPlease enter lenght of a: ");
-    scanf("%d", &a);
-    printf("\nPlease enter lenght of b: ");
-    scanf("%d", &b);
-    if (a == b && b == c) {
-        printf("трикутник рівносторонній");
-    }
-    else if (a == b || b == c || c == a) {
-        printf("трикутник рівнобедрений");
-    }
-    else if (a!= b != c) {
-        printf("трикутник різносторонній");
-    }
-
-
-    double a2 = a * a, b2 = b * b, c2 = c * c;
-
-    if (fabs(a2 + b2 - c2) < 1e-6 || fabs(a2 + c2 - b2) < 1e-6 || fabs(b2 + c2 - a2) < 1e-6) {
-        printf("\nТрикутник є прямокутним.\n");
-    } else if ((a2 + b2 > c2) && (a2 + c2 > b2) && (b2 + c2 > a2)) {
-        printf("\nТрикутник є гострокутним.\n");
+    char userInputNumTask4[3];
+    printf("\nPlease enter number: ");
+    scanf("%s", userInputNumTask4);
+    int lcd = userInputNumTask4[0] - '0';
+    int lcd1 = userInputNumTask4[1] - '0';
+    int lcd2 = userInputNumTask4[2] - '0';
+    printf("\n %s",hundreds[lcd]);
+    if (lcd1 == 1) {
+        printf(" %s",teens[lcd2]);
     } else {
-        printf("\nТрикутник є тупокутним.\n");
+        printf(" %s",tens[lcd1]);
+        printf(" %s",units[lcd2]);
     }
+
+    printf("\n%d%d%d", lcd, lcd1, lcd2);
 
     return 0;
 }
