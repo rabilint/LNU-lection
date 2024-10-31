@@ -29,3 +29,9 @@
 103	110	1730068406409928838	CMakeFiles/lab5.dir/main.cpp.o.modmap	27dac7de4cc5209
 110	375	1730068406419928838	CMakeFiles/lab5.dir/main.cpp.o	de6c0f2b1f732390
 376	455	1730068406683262168	lab5	72169882ffc1996c
+4	199	1730212950163323718	CMakeFiles/lab5.dir/main.cpp.o.ddi	ed9d7bc12451f292
+199	206	1730212950359990382	CMakeFiles/lab5.dir/CXX.dd	27dac7de4cc5209
+199	206	1730212950359990382	/home/rabilint/CLionProjects/LNU-lection/lab5/cmake-build-debug/CMakeFiles/lab5.dir/CXXModules.json	27dac7de4cc5209
+199	206	1730212950359990382	CMakeFiles/lab5.dir/main.cpp.o.modmap	27dac7de4cc5209
+206	521	1730212950366657048	CMakeFiles/lab5.dir/main.cpp.o	de6c0f2b1f732390
+522	611	1730212950679990377	lab5	72169882ffc1996c
