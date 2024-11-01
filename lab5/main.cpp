@@ -9,9 +9,9 @@ int main() {
     // // Написати програму, котра видаватиме результат порівняння двох введених з клавіатури
     // // чисел з допомогою оператора «?».
     //
-    // int userInputNum1, userInputNum2;
-    // printf("Please enter two numbers: ");
-    // scanf("%d %d", &userInputNum1, &userInputNum2);
+    int userInputNum1, userInputNum2;
+    printf("Please enter two numbers: ");
+    scanf("%d %d", &userInputNum1, &userInputNum2);
     // userInputNum1 > userInputNum2 ? printf("Перше число більше другого") : (userInputNum1 < userInputNum2 ? printf("Друге число більше першого") : printf("Числа рівні"));
     //
     //
