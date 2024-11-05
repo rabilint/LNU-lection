@@ -75,7 +75,7 @@ int main() {
     int output = (-y + sqrt(D)) / 2 * x;
     printf("\n Output x2= %d", output);
     output = (-y - sqrt(D)) / 2 * x;
-    printf("\n Output x2= %d", output);
+    printf("\n Output x1= %d", output);
 
     return 0;
 }
