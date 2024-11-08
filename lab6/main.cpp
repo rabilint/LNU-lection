@@ -9,7 +9,7 @@ int main() {
     char *vowel[] = {"a", "e", "i", "o", "u", "y"};
     char *consonant[] = {"b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"};
 
-    printf("Please enter a string: ");
+    printf("Please enter a string (write only in lowercase!): ");
     scanf("%s", input);
 
     int HomManyV = 0;
@@ -51,7 +51,7 @@ int main() {
         }
         i++;
     }
-    printf("%d",sum);
+    printf("сумма 1 + 2 ... + 100 без цифри 8 та 33: %d\n",sum);
 
     //задача 4
 
