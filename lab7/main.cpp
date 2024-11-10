@@ -24,8 +24,32 @@ int recursiveSum(int journalNum)
     return journalNum + recursiveSum(journalNum + 1);
 }
 
+//завдання 4
+
+double optimizationf (double x, int N, int A) {
+    return N * x + A;
+}
+
+double bisection_method(double a, double b, double tolerance, int N, int A) {
+    double c;
+    while ((b - a)/2 > tolerance) {
+        c = (a + b) / 2;
+        if (optimizationf(c, N, A) == 0) {
+            break;
+        } if( optimizationf(c, N, A ) * optimizationf(a, N, A) < 0 ) {
+            b = c;
+        } else {
+            a =c;
+        }
+    }
+    return c;
+}
+
 int main() {
-    int Num;
+    int Num, N =8, A =17;
+    double tolerance = 0.0001;
+    double a = -100;
+    double b = 100;
     printf("Enter number: ");
     scanf("%d", &Num);
 
@@ -48,8 +72,11 @@ int main() {
         }
         i++;
     }
-    printf("сумма 1 + 2 ... + 100 без цифри 8 та 33: %d\n",sum);
+    printf("\nсумма 1 - 100 без цифри 8 та 33: %d\n",sum);
 
+
+    printf("result : %.6f", bisection_method(a,b,tolerance,N,A));
 
     return 0;
 }
+
