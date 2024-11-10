@@ -30,6 +30,7 @@ double optimizationf (double x, int N, int A) {
     return N * x + A;
 }
 
+
 double bisection_method(double a, double b, double tolerance, int N, int A) {
     double c;
     while ((b - a)/2 > tolerance) {
