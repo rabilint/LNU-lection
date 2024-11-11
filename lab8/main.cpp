@@ -62,6 +62,7 @@ int main() {
     secondpointer = *task3(array,userRow,userCol);
     printf("\n%p : ", secondpointer);
     return 0;
+
 }
 
 
