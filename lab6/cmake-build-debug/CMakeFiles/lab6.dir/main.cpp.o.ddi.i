@@ -1505,7 +1505,7 @@ int main() {
     char *vowel[] = {"a", "e", "i", "o", "u", "y"};
     char *consonant[] = {"b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"};
 
-    printf("Please enter a string: ");
+    printf("Please enter a string (write only in lowercase!): ");
     scanf("%s", input);
 
     int HomManyV = 0;
@@ -1537,6 +1537,8 @@ int main() {
     printf("\nГолосних: %d\nПриголосних: %d\n", HomManyV, HomManyC);
 
 
+
+
     int i = 0;
     int sum = 0;
     while (i <= 100) {
@@ -1545,6 +1547,53 @@ int main() {
         }
         i++;
     }
-    printf("%d",sum);
+    printf("сумма 1 + 2 ... + 100 без цифри 8 та 33: %d\n",sum);
+
+
+
+    int howmanynum;
+    int num;
+    sum = 0;
+    int min;
+    int max;
+
+
+    do {
+        printf("How many nums? ");
+        scanf("%d", &howmanynum);
+        if (howmanynum < 7 || howmanynum > 12) {
+            printf("Please enter a number between 7 and 12.\n");
+        }
+
+    }while(howmanynum < 7 || howmanynum > 12);
+
+
+    printf("Insert num 1: ");
+    scanf("%d", &num);
+    sum = num;
+    min = max = num;
+
+    for (int i = 1; i < howmanynum; i++) {
+        printf("Введіть число %d: ", i + 1);
+        scanf("%d", &num);
+        sum += num;
+
+        if (num < min) {
+            min = num;
+        }
+        if (num > max) {
+            max = num;
+        }
+    }
+
+    double avarage = sum / howmanynum;
+    printf("\nAverage is %d", avarage);
+    printf("\nMinimum is %d", min);
+    printf("\nMaximum is %d", max);
+    printf("\nSumma is %d", sum);
+
+
+
+
     return 0;
 }
