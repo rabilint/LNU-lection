@@ -10,8 +10,7 @@ int* task1() {
 
     static int output[10];
     for (int i = 0; i < 10; i++) {
-        int r = rand() % 100; // Random int between 0 and 19
-        // printf("|%d",r);
+        int r = rand() % 100;
         output[i] = r;
     }
 
@@ -34,6 +33,31 @@ int* task3(int array[][COLS],int row,int cols) {
         return pointer;
     }
 }
+
+int task4(){
+    // srand(time(NULL));
+    static int output[20];
+    for (int i = 0; i < 20; i++) {
+        int r = rand() % 100;
+        output[i] = r;
+    }
+    for (int i = 0; i < 20; i++) {
+        printf("| nomer - %d : %d ",i, output[i]);
+    }
+    int min = output[0];
+    int max = output[0];
+    for(int i =0; i<20; i++) {
+        if (output[i] < min) {
+            min = output[i];
+        } else if (output[i] > max) {
+            max = output[i];
+
+        }
+    }
+    printf("\nmin = %d\nmax = %d\n",min,max);
+
+    return 0;
+};
 
 int main() {
 
@@ -60,7 +84,8 @@ int main() {
     scanf("%d", &userRow);
     scanf("%d", &userCol);
     secondpointer = *task3(array,userRow,userCol);
-    printf("\n%p : ", secondpointer);
+    printf("\n%p\n", secondpointer);
+    task4();
     return 0;
 
 }
