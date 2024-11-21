@@ -26317,9 +26317,12 @@ int recursiveSum(int journalNum)
     return journalNum + recursiveSum(journalNum + 1);
 }
 
+
+
 double optimizationf (double x, int N, int A) {
     return N * x + A;
 }
+
 
 double bisection_method(double a, double b, double tolerance, int N, int A) {
     double c;

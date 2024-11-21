@@ -16901,7 +16901,6 @@ int* task1() {
     static int output[10];
     for (int i = 0; i < 10; i++) {
         int r = rand() % 100;
-
         output[i] = r;
     }
 
@@ -16911,9 +16910,9 @@ int* task1() {
 int* task2(int array[],int num) {
     if (num > 11) {
         return 
-# 23 "/home/rabilint/CLionProjects/LNU-lection/lab8/main.cpp" 3 4
+# 22 "/home/rabilint/CLionProjects/LNU-lection/lab8/main.cpp" 3 4
               __null
-# 23 "/home/rabilint/CLionProjects/LNU-lection/lab8/main.cpp"
+# 22 "/home/rabilint/CLionProjects/LNU-lection/lab8/main.cpp"
                   ;
     }else {
         int *pointer = &array[num];
@@ -16923,15 +16922,40 @@ int* task2(int array[],int num) {
 int* task3(int array[][12],int row,int cols) {
     if (row > 13 || cols > 13) {
         return 
-# 31 "/home/rabilint/CLionProjects/LNU-lection/lab8/main.cpp" 3 4
+# 30 "/home/rabilint/CLionProjects/LNU-lection/lab8/main.cpp" 3 4
               __null
-# 31 "/home/rabilint/CLionProjects/LNU-lection/lab8/main.cpp"
+# 30 "/home/rabilint/CLionProjects/LNU-lection/lab8/main.cpp"
                   ;
     }else {
         int *pointer = &array[row][cols];
         return pointer;
     }
 }
+
+int task4(){
+
+    static int output[20];
+    for (int i = 0; i < 20; i++) {
+        int r = rand() % 100;
+        output[i] = r;
+    }
+    for (int i = 0; i < 20; i++) {
+        printf("| nomer - %d : %d ",i, output[i]);
+    }
+    int min = output[0];
+    int max = output[0];
+    for(int i =0; i<20; i++) {
+        if (output[i] < min) {
+            min = output[i];
+        } else if (output[i] > max) {
+            max = output[i];
+
+        }
+    }
+    printf("\nmin = %d\nmax = %d\n",min,max);
+
+    return 0;
+};
 
 int main() {
 
@@ -16954,10 +16978,12 @@ int main() {
     pointer = *task2(task1output,num);
     printf("%p",pointer);
 
-    printf("\nВведіть рядок та колонку елемента вказівний якого вас цікавить\n");
+    printf("\nВведіть спочатку рядок, а потім колонку елемента вказівний якого вас цікавить\n");
     scanf("%d", &userRow);
     scanf("%d", &userCol);
     secondpointer = *task3(array,userRow,userCol);
-    printf("\n%p : ", secondpointer);
+    printf("\n%p\n", secondpointer);
+    task4();
     return 0;
+
 }

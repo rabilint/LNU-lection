@@ -75,3 +75,9 @@
 169	177	1731267058613259927	CMakeFiles/lab7.dir/main.cpp.o.modmap	a62fc81829f2d781
 177	461	1731267058619926594	CMakeFiles/lab7.dir/main.cpp.o	79849fcaa6c20cf8
 461	543	1731267058903259923	lab7	2a3b286131b2fd41
+2	135	1732020225719998380	CMakeFiles/lab7.dir/main.cpp.o.ddi	a873cf85a8ebf4f2
+135	140	1732020225853331712	CMakeFiles/lab7.dir/CXX.dd	a62fc81829f2d781
+135	140	1732020225853331712	/home/rabilint/CLionProjects/LNU-lection/lab7/cmake-build-debug/CMakeFiles/lab7.dir/CXXModules.json	a62fc81829f2d781
+135	140	1732020225853331712	CMakeFiles/lab7.dir/main.cpp.o.modmap	a62fc81829f2d781
+140	387	1732020225859998379	CMakeFiles/lab7.dir/main.cpp.o	79849fcaa6c20cf8
+387	535	1732020226106665041	lab7	2a3b286131b2fd41
