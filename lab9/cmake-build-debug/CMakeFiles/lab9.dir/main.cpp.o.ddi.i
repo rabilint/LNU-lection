@@ -5,8 +5,8 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<командний рядок>" 2
 # 1 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp"
-# 1 "/usr/include/string.h" 1 3 4
-# 26 "/usr/include/string.h" 3 4
+# 1 "/usr/include/stdio.h" 1 3 4
+# 28 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 33 "/usr/include/bits/libc-header-start.h" 3 4
 # 1 "/usr/include/features.h" 1 3 4
@@ -36,469 +36,17 @@
 # 11 "/usr/include/gnu/stubs.h" 2 3 4
 # 536 "/usr/include/features.h" 2 3 4
 # 34 "/usr/include/bits/libc-header-start.h" 2 3 4
-# 27 "/usr/include/string.h" 2 3 4
+# 29 "/usr/include/stdio.h" 2 3 4
 
 
-# 28 "/usr/include/string.h" 3 4
+# 30 "/usr/include/stdio.h" 3 4
 extern "C" {
-
 
 
 
 # 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h" 1 3 4
 # 214 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h" 3 4
 typedef long unsigned int size_t;
-# 34 "/usr/include/string.h" 2 3 4
-# 43 "/usr/include/string.h" 3 4
-extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
-       size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern void *memmove (void *__dest, const void *__src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-
-extern void *memccpy (void *__restrict __dest, const void *__restrict __src,
-        int __c, size_t __n)
-    noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__write_only__, 1, 4)));
-
-
-
-
-extern void *memset (void *__s, int __c, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-extern int memcmp (const void *__s1, const void *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-# 80 "/usr/include/string.h" 3 4
-extern int __memcmpeq (const void *__s1, const void *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-extern "C++"
-{
-extern void *memchr (void *__s, int __c, size_t __n)
-      noexcept (true) __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-extern const void *memchr (const void *__s, int __c, size_t __n)
-      noexcept (true) __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 105 "/usr/include/string.h" 3 4
-}
-# 115 "/usr/include/string.h" 3 4
-extern "C++" void *rawmemchr (void *__s, int __c)
-     noexcept (true) __asm ("rawmemchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-extern "C++" const void *rawmemchr (const void *__s, int __c)
-     noexcept (true) __asm ("rawmemchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-
-
-extern "C++" void *memrchr (void *__s, int __c, size_t __n)
-      noexcept (true) __asm ("memrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)))
-      __attribute__ ((__access__ (__read_only__, 1, 3)));
-extern "C++" const void *memrchr (const void *__s, int __c, size_t __n)
-      noexcept (true) __asm ("memrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)))
-      __attribute__ ((__access__ (__read_only__, 1, 3)));
-# 141 "/usr/include/string.h" 3 4
-extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-extern char *strncpy (char *__restrict __dest,
-        const char *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern char *strcat (char *__restrict __dest, const char *__restrict __src)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-extern char *strncat (char *__restrict __dest, const char *__restrict __src,
-        size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int strcmp (const char *__s1, const char *__s2)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int strcoll (const char *__s1, const char *__s2)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-extern size_t strxfrm (char *__restrict __dest,
-         const char *__restrict __src, size_t __n)
-    noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 1, 3)));
-
-
-
-# 1 "/usr/include/bits/types/locale_t.h" 1 3 4
-# 22 "/usr/include/bits/types/locale_t.h" 3 4
-# 1 "/usr/include/bits/types/__locale_t.h" 1 3 4
-# 27 "/usr/include/bits/types/__locale_t.h" 3 4
-struct __locale_struct
-{
-
-  struct __locale_data *__locales[13];
-
-
-  const unsigned short int *__ctype_b;
-  const int *__ctype_tolower;
-  const int *__ctype_toupper;
-
-
-  const char *__names[13];
-};
-
-typedef struct __locale_struct *__locale_t;
-# 23 "/usr/include/bits/types/locale_t.h" 2 3 4
-
-typedef __locale_t locale_t;
-# 173 "/usr/include/string.h" 2 3 4
-
-
-extern int strcoll_l (const char *__s1, const char *__s2, locale_t __l)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
-
-
-extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
-    locale_t __l) noexcept (true) __attribute__ ((__nonnull__ (2, 4)))
-     __attribute__ ((__access__ (__write_only__, 1, 3)));
-
-
-
-
-
-extern char *strdup (const char *__s)
-     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-
-extern char *strndup (const char *__string, size_t __n)
-     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
-# 224 "/usr/include/string.h" 3 4
-extern "C++"
-{
-extern char *strchr (char *__s, int __c)
-     noexcept (true) __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-extern const char *strchr (const char *__s, int __c)
-     noexcept (true) __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 244 "/usr/include/string.h" 3 4
-}
-
-
-
-
-
-
-extern "C++"
-{
-extern char *strrchr (char *__s, int __c)
-     noexcept (true) __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-extern const char *strrchr (const char *__s, int __c)
-     noexcept (true) __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 271 "/usr/include/string.h" 3 4
-}
-# 281 "/usr/include/string.h" 3 4
-extern "C++" char *strchrnul (char *__s, int __c)
-     noexcept (true) __asm ("strchrnul") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-extern "C++" const char *strchrnul (const char *__s, int __c)
-     noexcept (true) __asm ("strchrnul") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 293 "/usr/include/string.h" 3 4
-extern size_t strcspn (const char *__s, const char *__reject)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern size_t strspn (const char *__s, const char *__accept)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern "C++"
-{
-extern char *strpbrk (char *__s, const char *__accept)
-     noexcept (true) __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-extern const char *strpbrk (const char *__s, const char *__accept)
-     noexcept (true) __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-# 321 "/usr/include/string.h" 3 4
-}
-
-
-
-
-
-
-extern "C++"
-{
-extern char *strstr (char *__haystack, const char *__needle)
-     noexcept (true) __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-extern const char *strstr (const char *__haystack, const char *__needle)
-     noexcept (true) __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-# 348 "/usr/include/string.h" 3 4
-}
-
-
-
-
-
-
-
-extern char *strtok (char *__restrict __s, const char *__restrict __delim)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
-extern char *__strtok_r (char *__restrict __s,
-    const char *__restrict __delim,
-    char **__restrict __save_ptr)
-     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
-
-extern char *strtok_r (char *__restrict __s, const char *__restrict __delim,
-         char **__restrict __save_ptr)
-     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
-
-
-
-
-
-extern "C++" char *strcasestr (char *__haystack, const char *__needle)
-     noexcept (true) __asm ("strcasestr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-extern "C++" const char *strcasestr (const char *__haystack,
-         const char *__needle)
-     noexcept (true) __asm ("strcasestr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-# 389 "/usr/include/string.h" 3 4
-extern void *memmem (const void *__haystack, size_t __haystacklen,
-       const void *__needle, size_t __needlelen)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 3)))
-    __attribute__ ((__access__ (__read_only__, 1, 2)))
-    __attribute__ ((__access__ (__read_only__, 3, 4)));
-
-
-
-extern void *__mempcpy (void *__restrict __dest,
-   const void *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-extern void *mempcpy (void *__restrict __dest,
-        const void *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-extern size_t strlen (const char *__s)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-extern size_t strnlen (const char *__string, size_t __maxlen)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-extern char *strerror (int __errnum) noexcept (true);
-# 444 "/usr/include/string.h" 3 4
-extern char *strerror_r (int __errnum, char *__buf, size_t __buflen)
-     noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 2, 3)));
-
-
-
-
-extern const char *strerrordesc_np (int __err) noexcept (true);
-
-extern const char *strerrorname_np (int __err) noexcept (true);
-
-
-
-
-
-extern char *strerror_l (int __errnum, locale_t __l) noexcept (true);
-
-
-
-# 1 "/usr/include/strings.h" 1 3 4
-# 23 "/usr/include/strings.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h" 1 3 4
-# 24 "/usr/include/strings.h" 2 3 4
-
-
-
-
-
-
-extern "C" {
-
-
-
-extern int bcmp (const void *__s1, const void *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern void bcopy (const void *__src, void *__dest, size_t __n)
-  noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern void bzero (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-extern "C++"
-{
-extern char *index (char *__s, int __c)
-     noexcept (true) __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-extern const char *index (const char *__s, int __c)
-     noexcept (true) __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 66 "/usr/include/strings.h" 3 4
-}
-
-
-
-
-
-
-
-extern "C++"
-{
-extern char *rindex (char *__s, int __c)
-     noexcept (true) __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-extern const char *rindex (const char *__s, int __c)
-     noexcept (true) __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 94 "/usr/include/strings.h" 3 4
-}
-# 104 "/usr/include/strings.h" 3 4
-extern int ffs (int __i) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-
-extern int ffsl (long int __l) noexcept (true) __attribute__ ((__const__));
-__extension__ extern int ffsll (long long int __ll)
-     noexcept (true) __attribute__ ((__const__));
-
-
-
-extern int strcasecmp (const char *__s1, const char *__s2)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-
-
-extern int strcasecmp_l (const char *__s1, const char *__s2, locale_t __loc)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
-
-
-
-extern int strncasecmp_l (const char *__s1, const char *__s2,
-     size_t __n, locale_t __loc)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 4)));
-
-
-}
-# 463 "/usr/include/string.h" 2 3 4
-
-
-
-extern void explicit_bzero (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)))
-    __attribute__ ((__access__ (__write_only__, 1, 2)));
-
-
-
-extern char *strsep (char **__restrict __stringp,
-       const char *__restrict __delim)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-extern char *strsignal (int __sig) noexcept (true);
-
-
-
-extern const char *sigabbrev_np (int __sig) noexcept (true);
-
-
-extern const char *sigdescr_np (int __sig) noexcept (true);
-
-
-
-extern char *__stpcpy (char *__restrict __dest, const char *__restrict __src)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-extern char *stpcpy (char *__restrict __dest, const char *__restrict __src)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-extern char *__stpncpy (char *__restrict __dest,
-   const char *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-extern char *stpncpy (char *__restrict __dest,
-        const char *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-extern size_t strlcpy (char *__restrict __dest,
-         const char *__restrict __src, size_t __n)
-  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__write_only__, 1, 3)));
-
-
-
-extern size_t strlcat (char *__restrict __dest,
-         const char *__restrict __src, size_t __n)
-  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__read_write__, 1, 3)));
-
-
-
-
-extern int strverscmp (const char *__s1, const char *__s2)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern char *strfry (char *__string) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-extern void *memfrob (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)))
-    __attribute__ ((__access__ (__read_write__, 1, 2)));
-
-
-
-
-
-
-
-extern "C++" char *basename (char *__filename)
-     noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
-extern "C++" const char *basename (const char *__filename)
-     noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
-# 552 "/usr/include/string.h" 3 4
-}
-# 2 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 2
-# 1 "/usr/include/stdio.h" 1 3 4
-# 28 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
-# 29 "/usr/include/stdio.h" 2 3 4
-
-extern "C" {
-
-
-
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h" 1 3 4
 # 35 "/usr/include/stdio.h" 2 3 4
 
 
@@ -1350,36 +898,740 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 973 "/usr/include/stdio.h" 3 4
 }
+# 2 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 2
+# 1 "/usr/include/string.h" 1 3 4
+# 26 "/usr/include/string.h" 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/string.h" 2 3 4
+
+extern "C" {
+
+
+
+
+# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h" 1 3 4
+# 34 "/usr/include/string.h" 2 3 4
+# 43 "/usr/include/string.h" 3 4
+extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+       size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void *memmove (void *__dest, const void *__src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+extern void *memccpy (void *__restrict __dest, const void *__restrict __src,
+        int __c, size_t __n)
+    noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__write_only__, 1, 4)));
+
+
+
+
+extern void *memset (void *__s, int __c, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+extern int memcmp (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 80 "/usr/include/string.h" 3 4
+extern int __memcmpeq (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern "C++"
+{
+extern void *memchr (void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const void *memchr (const void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 105 "/usr/include/string.h" 3 4
+}
+# 115 "/usr/include/string.h" 3 4
+extern "C++" void *rawmemchr (void *__s, int __c)
+     noexcept (true) __asm ("rawmemchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern "C++" const void *rawmemchr (const void *__s, int __c)
+     noexcept (true) __asm ("rawmemchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+extern "C++" void *memrchr (void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)))
+      __attribute__ ((__access__ (__read_only__, 1, 3)));
+extern "C++" const void *memrchr (const void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)))
+      __attribute__ ((__access__ (__read_only__, 1, 3)));
+# 141 "/usr/include/string.h" 3 4
+extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncpy (char *__restrict __dest,
+        const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncat (char *__restrict __dest, const char *__restrict __src,
+        size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcoll (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern size_t strxfrm (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+    noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+# 1 "/usr/include/bits/types/locale_t.h" 1 3 4
+# 22 "/usr/include/bits/types/locale_t.h" 3 4
+# 1 "/usr/include/bits/types/__locale_t.h" 1 3 4
+# 27 "/usr/include/bits/types/__locale_t.h" 3 4
+struct __locale_struct
+{
+
+  struct __locale_data *__locales[13];
+
+
+  const unsigned short int *__ctype_b;
+  const int *__ctype_tolower;
+  const int *__ctype_toupper;
+
+
+  const char *__names[13];
+};
+
+typedef struct __locale_struct *__locale_t;
+# 23 "/usr/include/bits/types/locale_t.h" 2 3 4
+
+typedef __locale_t locale_t;
+# 173 "/usr/include/string.h" 2 3 4
+
+
+extern int strcoll_l (const char *__s1, const char *__s2, locale_t __l)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
+
+
+extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
+    locale_t __l) noexcept (true) __attribute__ ((__nonnull__ (2, 4)))
+     __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+
+
+extern char *strdup (const char *__s)
+     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern char *strndup (const char *__string, size_t __n)
+     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+# 224 "/usr/include/string.h" 3 4
+extern "C++"
+{
+extern char *strchr (char *__s, int __c)
+     noexcept (true) __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *strchr (const char *__s, int __c)
+     noexcept (true) __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 244 "/usr/include/string.h" 3 4
+}
+
+
+
+
+
+
+extern "C++"
+{
+extern char *strrchr (char *__s, int __c)
+     noexcept (true) __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *strrchr (const char *__s, int __c)
+     noexcept (true) __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 271 "/usr/include/string.h" 3 4
+}
+# 281 "/usr/include/string.h" 3 4
+extern "C++" char *strchrnul (char *__s, int __c)
+     noexcept (true) __asm ("strchrnul") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern "C++" const char *strchrnul (const char *__s, int __c)
+     noexcept (true) __asm ("strchrnul") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 293 "/usr/include/string.h" 3 4
+extern size_t strcspn (const char *__s, const char *__reject)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern size_t strspn (const char *__s, const char *__accept)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern "C++"
+{
+extern char *strpbrk (char *__s, const char *__accept)
+     noexcept (true) __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern const char *strpbrk (const char *__s, const char *__accept)
+     noexcept (true) __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 321 "/usr/include/string.h" 3 4
+}
+
+
+
+
+
+
+extern "C++"
+{
+extern char *strstr (char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern const char *strstr (const char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 348 "/usr/include/string.h" 3 4
+}
+
+
+
+
+
+
+
+extern char *strtok (char *__restrict __s, const char *__restrict __delim)
+     noexcept (true) __attribute__ ((__nonnull__ (2)));
+
+
+
+extern char *__strtok_r (char *__restrict __s,
+    const char *__restrict __delim,
+    char **__restrict __save_ptr)
+     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
+
+extern char *strtok_r (char *__restrict __s, const char *__restrict __delim,
+         char **__restrict __save_ptr)
+     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
+
+
+
+
+
+extern "C++" char *strcasestr (char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strcasestr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern "C++" const char *strcasestr (const char *__haystack,
+         const char *__needle)
+     noexcept (true) __asm ("strcasestr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 389 "/usr/include/string.h" 3 4
+extern void *memmem (const void *__haystack, size_t __haystacklen,
+       const void *__needle, size_t __needlelen)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 3)))
+    __attribute__ ((__access__ (__read_only__, 1, 2)))
+    __attribute__ ((__access__ (__read_only__, 3, 4)));
+
+
+
+extern void *__mempcpy (void *__restrict __dest,
+   const void *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern void *mempcpy (void *__restrict __dest,
+        const void *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern size_t strlen (const char *__s)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern size_t strnlen (const char *__string, size_t __maxlen)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern char *strerror (int __errnum) noexcept (true);
+# 444 "/usr/include/string.h" 3 4
+extern char *strerror_r (int __errnum, char *__buf, size_t __buflen)
+     noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 2, 3)));
+
+
+
+
+extern const char *strerrordesc_np (int __err) noexcept (true);
+
+extern const char *strerrorname_np (int __err) noexcept (true);
+
+
+
+
+
+extern char *strerror_l (int __errnum, locale_t __l) noexcept (true);
+
+
+
+# 1 "/usr/include/strings.h" 1 3 4
+# 23 "/usr/include/strings.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h" 1 3 4
+# 24 "/usr/include/strings.h" 2 3 4
+
+
+
+
+
+
+extern "C" {
+
+
+
+extern int bcmp (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void bcopy (const void *__src, void *__dest, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void bzero (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern "C++"
+{
+extern char *index (char *__s, int __c)
+     noexcept (true) __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *index (const char *__s, int __c)
+     noexcept (true) __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 66 "/usr/include/strings.h" 3 4
+}
+
+
+
+
+
+
+
+extern "C++"
+{
+extern char *rindex (char *__s, int __c)
+     noexcept (true) __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *rindex (const char *__s, int __c)
+     noexcept (true) __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 94 "/usr/include/strings.h" 3 4
+}
+# 104 "/usr/include/strings.h" 3 4
+extern int ffs (int __i) noexcept (true) __attribute__ ((__const__));
+
+
+
+
+
+extern int ffsl (long int __l) noexcept (true) __attribute__ ((__const__));
+__extension__ extern int ffsll (long long int __ll)
+     noexcept (true) __attribute__ ((__const__));
+
+
+
+extern int strcasecmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+
+extern int strcasecmp_l (const char *__s1, const char *__s2, locale_t __loc)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
+
+
+
+extern int strncasecmp_l (const char *__s1, const char *__s2,
+     size_t __n, locale_t __loc)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 4)));
+
+
+}
+# 463 "/usr/include/string.h" 2 3 4
+
+
+
+extern void explicit_bzero (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)))
+    __attribute__ ((__access__ (__write_only__, 1, 2)));
+
+
+
+extern char *strsep (char **__restrict __stringp,
+       const char *__restrict __delim)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern char *strsignal (int __sig) noexcept (true);
+
+
+
+extern const char *sigabbrev_np (int __sig) noexcept (true);
+
+
+extern const char *sigdescr_np (int __sig) noexcept (true);
+
+
+
+extern char *__stpcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern char *stpcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern char *__stpncpy (char *__restrict __dest,
+   const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern char *stpncpy (char *__restrict __dest,
+        const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern size_t strlcpy (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+extern size_t strlcat (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__read_write__, 1, 3)));
+
+
+
+
+extern int strverscmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *strfry (char *__string) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+extern void *memfrob (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)))
+    __attribute__ ((__access__ (__read_write__, 1, 2)));
+
+
+
+
+
+
+
+extern "C++" char *basename (char *__filename)
+     noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
+extern "C++" const char *basename (const char *__filename)
+     noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
+# 552 "/usr/include/string.h" 3 4
+}
 # 3 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 2
+# 1 "/usr/include/ctype.h" 1 3 4
+# 28 "/usr/include/ctype.h" 3 4
+extern "C" {
+# 39 "/usr/include/ctype.h" 3 4
+# 1 "/usr/include/bits/endian.h" 1 3 4
+# 35 "/usr/include/bits/endian.h" 3 4
+# 1 "/usr/include/bits/endianness.h" 1 3 4
+# 36 "/usr/include/bits/endian.h" 2 3 4
+# 40 "/usr/include/ctype.h" 2 3 4
 
 
-# 4 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp"
+
+
+
+
+enum
+{
+  _ISupper = ((0) < 8 ? ((1 << (0)) << 8) : ((1 << (0)) >> 8)),
+  _ISlower = ((1) < 8 ? ((1 << (1)) << 8) : ((1 << (1)) >> 8)),
+  _ISalpha = ((2) < 8 ? ((1 << (2)) << 8) : ((1 << (2)) >> 8)),
+  _ISdigit = ((3) < 8 ? ((1 << (3)) << 8) : ((1 << (3)) >> 8)),
+  _ISxdigit = ((4) < 8 ? ((1 << (4)) << 8) : ((1 << (4)) >> 8)),
+  _ISspace = ((5) < 8 ? ((1 << (5)) << 8) : ((1 << (5)) >> 8)),
+  _ISprint = ((6) < 8 ? ((1 << (6)) << 8) : ((1 << (6)) >> 8)),
+  _ISgraph = ((7) < 8 ? ((1 << (7)) << 8) : ((1 << (7)) >> 8)),
+  _ISblank = ((8) < 8 ? ((1 << (8)) << 8) : ((1 << (8)) >> 8)),
+  _IScntrl = ((9) < 8 ? ((1 << (9)) << 8) : ((1 << (9)) >> 8)),
+  _ISpunct = ((10) < 8 ? ((1 << (10)) << 8) : ((1 << (10)) >> 8)),
+  _ISalnum = ((11) < 8 ? ((1 << (11)) << 8) : ((1 << (11)) >> 8))
+};
+# 79 "/usr/include/ctype.h" 3 4
+extern const unsigned short int **__ctype_b_loc (void)
+     noexcept (true) __attribute__ ((__const__));
+extern const __int32_t **__ctype_tolower_loc (void)
+     noexcept (true) __attribute__ ((__const__));
+extern const __int32_t **__ctype_toupper_loc (void)
+     noexcept (true) __attribute__ ((__const__));
+# 108 "/usr/include/ctype.h" 3 4
+extern int isalnum (int) noexcept (true);
+extern int isalpha (int) noexcept (true);
+extern int iscntrl (int) noexcept (true);
+extern int isdigit (int) noexcept (true);
+extern int islower (int) noexcept (true);
+extern int isgraph (int) noexcept (true);
+extern int isprint (int) noexcept (true);
+extern int ispunct (int) noexcept (true);
+extern int isspace (int) noexcept (true);
+extern int isupper (int) noexcept (true);
+extern int isxdigit (int) noexcept (true);
+
+
+
+extern int tolower (int __c) noexcept (true);
+
+
+extern int toupper (int __c) noexcept (true);
+
+
+
+
+extern int isblank (int) noexcept (true);
+
+
+
+
+extern int isctype (int __c, int __mask) noexcept (true);
+
+
+
+
+
+
+extern int isascii (int __c) noexcept (true);
+
+
+
+extern int toascii (int __c) noexcept (true);
+
+
+
+extern int _toupper (int) noexcept (true);
+extern int _tolower (int) noexcept (true);
+# 251 "/usr/include/ctype.h" 3 4
+extern int isalnum_l (int, locale_t) noexcept (true);
+extern int isalpha_l (int, locale_t) noexcept (true);
+extern int iscntrl_l (int, locale_t) noexcept (true);
+extern int isdigit_l (int, locale_t) noexcept (true);
+extern int islower_l (int, locale_t) noexcept (true);
+extern int isgraph_l (int, locale_t) noexcept (true);
+extern int isprint_l (int, locale_t) noexcept (true);
+extern int ispunct_l (int, locale_t) noexcept (true);
+extern int isspace_l (int, locale_t) noexcept (true);
+extern int isupper_l (int, locale_t) noexcept (true);
+extern int isxdigit_l (int, locale_t) noexcept (true);
+
+extern int isblank_l (int, locale_t) noexcept (true);
+
+
+
+extern int __tolower_l (int __c, locale_t __l) noexcept (true);
+extern int tolower_l (int __c, locale_t __l) noexcept (true);
+
+
+extern int __toupper_l (int __c, locale_t __l) noexcept (true);
+extern int toupper_l (int __c, locale_t __l) noexcept (true);
+# 327 "/usr/include/ctype.h" 3 4
+}
+# 4 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 2
+
+
+
+
+# 7 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp"
+int is_valid_email(char *email) {
+
+    const char *sign = strchr(email, '@');
+    if (!sign) {
+
+        return 0;
+    }
+
+
+    char buffer[100];
+    strncpy(buffer, email, sign - email);
+    buffer[sign - email] = '\0';
+    if (strlen(buffer) == 0 || !isalnum(buffer[0]) || !isalnum(buffer[strlen(buffer) - 1])) {
+        return 0;
+    }
+    for (int i = 0; i < strlen(buffer); i++) {
+        if (!isalnum(buffer[i]) || !buffer[i] == '.' || !buffer[i] == '_') {
+            return 0;
+        }
+    }
+
+
+    strncpy(buffer, sign + 1, strlen(email));
+    char *dot = strchr(buffer, '.');
+    if (!dot) return 0;
+
+    char *token = strtok(buffer, ".");
+    int domain_part_count = 0;
+    while (token) {
+        domain_part_count++;
+        if (strlen(token) == 0 || !isalpha(token[0])) {
+            return 0;
+        }
+        for (int i = 0; i < strlen(token); i++) {
+            if (!isalnum(token[i])) {
+                return 0;
+            }
+        }
+        token = strtok(
+# 45 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 3 4
+                      __null
+# 45 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp"
+                          , ".");
+    }
+
+    if (domain_part_count < 2) {
+        return 0;
+    }
+
+    return 1;
+}
+
+
 int main(void) {
     char inputRow[255];
     scanf("%[^\n]", inputRow);
     char *token = strtok(inputRow, " ");
 
     while (token != 
-# 9 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 3 4
+# 61 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 3 4
                    __null
-# 9 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp"
+# 61 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp"
                        ) {
         for(int i=strlen(token) - 1; i>=0;--i)
             printf("%c", token[i]);
 
         printf("\n");
         token = strtok(
-# 14 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 3 4
+# 66 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp" 3 4
                       __null
-# 14 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp"
+# 66 "/home/rabilint/CLionProjects/LNU-lection/lab9/main.cpp"
                           , " ");
     }
 
 
 
-    char team[12];
+    char buffer[150];
+    int count = 0;
+    int surname_length = 0;
+    int numbers[15];
+    char surnames[15][100];
+    char names[15][100];
 
-    scanf("%[^\n]", team);
+    printf("Введіть список у форматі 'Номер Прізвище Ім’я'. Введіть 'stop' для завершення:\n");
+    while(1){
+        printf("Учасник %d: ", count + 1);
+        scanf(" %[^\n]", buffer);
+        getchar();
+
+
+        if(strcmp(buffer, "stop") == 0) {
+            break;
+        }
+
+
+        int i = sscanf(buffer, "%d %s %s", &numbers[count], surnames[count], names[count]);
+
+        if (i != 3) {
+            printf("Неправильний формат. Спробуйте ще раз.\n");
+            continue;
+        }
+
+        count++;
+        if(count > 15) {
+            printf("Досягли максимальної кількості записів. \n");
+            break;
+        }
+    }
+
+
+    int uniq_name_count = 0;
+    char unique_names[15][100];
+    for(int i = 0; i < count; i++) {
+        for (int j = i; j < count; j++)
+        {
+            if (strcmp(names[i], names[j]) != 0) {
+                uniq_name_count++;
+                break;
+            }
+        }
+    }
+
+
+    for (int i = 0; i < count - 1; i++) {
+        for (int j = 0; j < count - i - 1; j++) {
+
+            if (strcmp(names[j], names[j + 1]) > 0 ||
+                (strcmp(names[j], names[j + 1]) == 0 && strcmp(surnames[j], surnames[j + 1]) > 0)) {
+
+                int temp_num = numbers[j];
+                numbers[j] = numbers[j + 1];
+                numbers[j + 1] = temp_num;
+
+
+                char temp_name[100];
+                strcpy(temp_name, names[j]);
+                strcpy(names[j], names[j + 1]);
+                strcpy(names[j + 1], temp_name);
+
+
+                char temp_surname[100];
+                strcpy(temp_surname, surnames[j]);
+                strcpy(surnames[j], surnames[j + 1]);
+                strcpy(surnames[j + 1], temp_surname);
+            }
+        }
+    }
+
+
+    int avg_surname = count > 0 ? (double)surname_length / count : 0;
+    printf("*******************************\n");
+    printf("Кількість унікальних імен: %d\n", uniq_name_count);
+    printf("Середня довжина прізвищ: %d \n", avg_surname);
+    printf("Список учасників в алфавітному порядку:\n");
+    for (int i = 0; i < count; i++) {
+        printf("%d %s %s\n", numbers[i], names[i], surnames[i]);
+    }
+
+
+    char email[100];
+    printf("Введіть адресу електронної пошти: ");
+    scanf(" %[^\n]", email);
+
+    if (is_valid_email(email)) {
+        printf("Адреса електронної пошти правильна.\n");
+    } else {
+        printf("Адреса електронної пошти неправильна.\n");
+    }
 
     return 0;
 }
