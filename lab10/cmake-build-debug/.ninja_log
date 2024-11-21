@@ -1,0 +1,13 @@
+# ninja log v6
+7	80	1732203978429975323	CMakeFiles/lab10.dir/main.cpp.o.ddi	9976ed6c36c42fd7
+80	84	1732203978506641988	CMakeFiles/lab10.dir/CXX.dd	52dafdfcaa44d2ba
+80	84	1732203978506641988	/home/rabilint/CLionProjects/LNU-lection/lab10/cmake-build-debug/CMakeFiles/lab10.dir/CXXModules.json	52dafdfcaa44d2ba
+80	84	1732203978506641988	CMakeFiles/lab10.dir/main.cpp.o.modmap	52dafdfcaa44d2ba
+0	74	1732203978766641984	CMakeFiles/lab10.dir/main.cpp.o	3205a1fbd01aa1cc
+74	224	1732203978839975317	lab10	38e1cb5d3d919cc0
+4	111	1732206556769936863	CMakeFiles/lab10.dir/main.cpp.o.ddi	9976ed6c36c42fd7
+111	118	1732206556876603528	CMakeFiles/lab10.dir/CXX.dd	52dafdfcaa44d2ba
+111	118	1732206556876603528	/home/rabilint/CLionProjects/LNU-lection/lab10/cmake-build-debug/CMakeFiles/lab10.dir/CXXModules.json	52dafdfcaa44d2ba
+111	118	1732206556876603528	CMakeFiles/lab10.dir/main.cpp.o.modmap	52dafdfcaa44d2ba
+118	201	1732206556886603528	CMakeFiles/lab10.dir/main.cpp.o	3205a1fbd01aa1cc
+201	294	1732206556969936861	lab10	38e1cb5d3d919cc0
